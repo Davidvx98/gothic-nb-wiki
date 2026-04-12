@@ -1,0 +1,293 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Configuración Gothic.ini - Gothic II: New Balance">
+	<h1 class="text-3xl font-bold text-red-400 border-b-2 border-red-500/30 pb-3 mb-6">Gothic.ini</h1>
+
+	<p class="text-gray-300 mb-6">Archivo de configuración principal del mod New Balance. Aquí se documentan todas las variables configurables y sus efectos.</p>
+
+	<!-- ========== VARIABLES GENERALES ========== -->
+	<h2 class="text-2xl font-semibold text-red-300 mt-10 mb-4 border-b border-gray-700 pb-2">Variables generales</h2>
+
+	<p class="text-gray-300 mb-3">Los siguientes valores aceptan:</p>
+	<ul class="list-disc list-inside text-gray-400 mb-4 space-y-1">
+		<li><code class="bg-gray-800 px-1.5 py-0.5 rounded text-red-300 text-sm">1</code> — activar la opción</li>
+		<li><code class="bg-gray-800 px-1.5 py-0.5 rounded text-red-300 text-sm">0</code> — desactivar la opción</li>
+	</ul>
+
+	<div class="overflow-x-auto mb-8">
+	<table class="w-full text-sm border-collapse">
+		<thead>
+			<tr class="bg-gray-800">
+				<th class="text-left p-3 text-red-300 font-semibold border-b border-gray-700">Variable</th>
+				<th class="text-left p-3 text-red-300 font-semibold border-b border-gray-700">Descripción</th>
+			</tr>
+		</thead>
+		<tbody class="text-gray-300">
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="bg-gray-800 px-1.5 py-0.5 rounded text-red-300 text-xs">extModeActivate</code></td><td class="p-3">Activa el modo de mejoras y sellos (funciona desde nueva partida)</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="bg-gray-800 px-1.5 py-0.5 rounded text-red-300 text-xs">bSkipLogo</code></td><td class="p-3">Omite la cinemática inicial del juego</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="bg-gray-800 px-1.5 py-0.5 rounded text-red-300 text-xs">bToggleLockPickHelper</code></td><td class="p-3">Activa las ayudas durante el robo de cofres</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="bg-gray-800 px-1.5 py-0.5 rounded text-red-300 text-xs">bPoisonWeaponEffect</code></td><td class="p-3">Activa el efecto visual de veneno en el arma (solo para maestro de venenos)</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="bg-gray-800 px-1.5 py-0.5 rounded text-red-300 text-xs">bToggleSpellHint</code></td><td class="p-3">Activa la visualización del hechizo seleccionado</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="bg-gray-800 px-1.5 py-0.5 rounded text-red-300 text-xs">bToggleShowStatPlus</code></td><td class="p-3">Añade "+" antes del valor de vida o maná regenerado</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="bg-gray-800 px-1.5 py-0.5 rounded text-red-300 text-xs">bShowEnemyHealth</code></td><td class="p-3">Muestra la cantidad de vida del enemigo</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="bg-gray-800 px-1.5 py-0.5 rounded text-red-300 text-xs">bQuickLootEnabled</code></td><td class="p-3">Activa el saqueo rápido (quickloot)</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="bg-gray-800 px-1.5 py-0.5 rounded text-red-300 text-xs">bHideWaterMageIceShield</code></td><td class="p-3">Oculta los efectos visuales del escudo de los Magos del Agua</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="bg-gray-800 px-1.5 py-0.5 rounded text-red-300 text-xs">FreezeHeroSpeedNormal</code></td><td class="p-3">Desactiva el escalado de velocidad de carrera</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="bg-gray-800 px-1.5 py-0.5 rounded text-red-300 text-xs">bToggleSeparateHealManaNumbers</code></td><td class="p-3">Muestra la regeneración de maná y vida como textos separados</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="bg-gray-800 px-1.5 py-0.5 rounded text-red-300 text-xs">bHideBarsText</code></td><td class="p-3">Oculta los nombres de las barras (vida/maná/resistencia)</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="bg-gray-800 px-1.5 py-0.5 rounded text-red-300 text-xs">bNewLegPlusNB</code></td><td class="p-3">Activa la dificultad Nightmare+</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="bg-gray-800 px-1.5 py-0.5 rounded text-red-300 text-xs">bShowMesMemoryFull</code></td><td class="p-3">Muestra mensaje de falta de memoria disponible</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="bg-gray-800 px-1.5 py-0.5 rounded text-red-300 text-xs">bGlobalStaggerEnabled</code></td><td class="p-3">Activa el aturdimiento en combate cuerpo a cuerpo</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="bg-gray-800 px-1.5 py-0.5 rounded text-red-300 text-xs">bShowStaggerVisual</code></td><td class="p-3">Activa la barra de aturdimiento</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="bg-gray-800 px-1.5 py-0.5 rounded text-red-300 text-xs">bShowPoisonBarVisual</code></td><td class="p-3">Activa la barra de envenenamiento</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="bg-gray-800 px-1.5 py-0.5 rounded text-red-300 text-xs">bCanRenderHotbarInBattle</code></td><td class="p-3">Barra de acceso rápido durante el combate</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="bg-gray-800 px-1.5 py-0.5 rounded text-red-300 text-xs">bProtectTraders</code></td><td class="p-3">Protege a los comerciantes de perder equipamiento</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="bg-gray-800 px-1.5 py-0.5 rounded text-red-300 text-xs">nightmareZeroLP</code></td><td class="p-3">Modo 0PA/nivel en Nightmare</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="bg-gray-800 px-1.5 py-0.5 rounded text-red-300 text-xs">bShowSummonHealthBar</code></td><td class="p-3">Barra de vida para invocaciones (Hubaxis, Krayt, Jina, Sid)</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="bg-gray-800 px-1.5 py-0.5 rounded text-red-300 text-xs">bShowSummonHealthBarPosX</code></td><td class="p-3">Posición X de la barra de invocaciones</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="bg-gray-800 px-1.5 py-0.5 rounded text-red-300 text-xs">bShowSummonHealthBarPosY</code></td><td class="p-3">Posición Y de la barra de invocaciones</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="bg-gray-800 px-1.5 py-0.5 rounded text-red-300 text-xs">bToggle_SightColorAimBySpellLevel</code></td><td class="p-3">Resalta al enemigo mientras se cargan hechizos</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="bg-gray-800 px-1.5 py-0.5 rounded text-red-300 text-xs">bLinuxMusicFix</code></td><td class="p-3">Linux: desactiva la música en menú para prevenir crashes</td></tr>
+		</tbody>
+	</table>
+	</div>
+
+	<!-- ========== APARIENCIA DEL FUEGO FATUO ========== -->
+	<h2 class="text-2xl font-semibold text-red-300 mt-10 mb-4 border-b border-gray-700 pb-2">Apariencia del fuego fatuo</h2>
+
+	<p class="text-gray-300 mb-4">Los valores deben cambiarse en <code class="bg-gray-800 px-1.5 py-0.5 rounded text-red-300 text-sm">gothic.ini</code> en la sección <code class="bg-gray-800 px-1.5 py-0.5 rounded text-red-300 text-sm">[WISP_SETTINGS]</code>.</p>
+
+	<div class="overflow-x-auto mb-8">
+	<table class="w-full text-sm border-collapse">
+		<thead>
+			<tr class="bg-gray-800">
+				<th class="text-left p-3 text-red-300 font-semibold border-b border-gray-700">Variable</th>
+				<th class="text-left p-3 text-red-300 font-semibold border-b border-gray-700">Por defecto</th>
+				<th class="text-left p-3 text-red-300 font-semibold border-b border-gray-700">Rango</th>
+				<th class="text-left p-3 text-red-300 font-semibold border-b border-gray-700">Descripción</th>
+			</tr>
+		</thead>
+		<tbody class="text-gray-300">
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="text-red-300 text-xs">ppsvalue</code></td><td class="p-3">100</td><td class="p-3">1-500</td><td class="p-3">Cantidad de partículas y densidad del fuego</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="text-red-300 text-xs">shpdim_s</code></td><td class="p-3">15</td><td class="p-3">1-100</td><td class="p-3">Tamaño medio de la llama</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="text-red-300 text-xs">color</code></td><td class="p-3">255 255 255</td><td class="p-3">RGB</td><td class="p-3">Color de la luz principal</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="text-red-300 text-xs">colorEnd</code></td><td class="p-3">255 255 255</td><td class="p-3">RGB</td><td class="p-3">Color de la luz secundaria</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="text-red-300 text-xs">vissizestart_s</code></td><td class="p-3">50 50</td><td class="p-3">1-500</td><td class="p-3">Tamaño de las partículas</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="text-red-300 text-xs">visAlphaStart</code></td><td class="p-3">0</td><td class="p-3">0-255</td><td class="p-3">Transparencia mínima</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="text-red-300 text-xs">visAlphaEnd</code></td><td class="p-3">230</td><td class="p-3">0-255</td><td class="p-3">Transparencia máxima</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="text-red-300 text-xs">visalphafunc_s</code></td><td class="p-3">ADD</td><td class="p-3">ADD/BLEND</td><td class="p-3">Tipo de mezcla de colores</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="text-red-300 text-xs">visname_s</code></td><td class="p-3">BLUEGLOW.TGA</td><td class="p-3">Textura</td><td class="p-3">Textura de la luz</td></tr>
+		</tbody>
+	</table>
+	</div>
+
+	<!-- ========== PRESETS DEL FUEGO FATUO ========== -->
+	<h2 class="text-2xl font-semibold text-red-300 mt-10 mb-4 border-b border-gray-700 pb-2">Presets del fuego fatuo</h2>
+
+	<p class="text-gray-400 mb-4">Originalmente compartidos en <a href="https://rpgrussia.com/threads/novyj-balans-nastrojka-vneshnego-vida-ogonka.41048/" target="_blank" class="text-red-400 hover:text-red-300">RPGRussia</a>.</p>
+
+	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+		<div class="bg-gray-800/60 border border-gray-700 rounded-xl p-4">
+			<h3 class="text-pink-400 font-semibold mb-2">🩷 Rosa</h3>
+			<pre class="bg-gray-900 rounded-lg p-3 text-xs text-gray-300 overflow-x-auto"><code>ppsvalue=125
+shpdim_s=10
+color=213 45 129
+colorEnd=255 45 87
+vissizestart_s=50 50
+visAlphaEnd=230
+visAlphaStart=30
+visalphafunc_s=ADD
+visname_s=BLUEGLOW.TGA</code></pre>
+		</div>
+		<div class="bg-gray-800/60 border border-gray-700 rounded-xl p-4">
+			<h3 class="text-red-500 font-semibold mb-2">🔴 Humo rojo</h3>
+			<pre class="bg-gray-900 rounded-lg p-3 text-xs text-gray-300 overflow-x-auto"><code>ppsvalue=200
+shpdim_s=25
+color=255 0 0
+colorEnd=100 0 0
+vissizestart_s=80 80
+visAlphaEnd=180
+visAlphaStart=10
+visalphafunc_s=BLEND
+visname_s=BLUEGLOW.TGA</code></pre>
+		</div>
+		<div class="bg-gray-800/60 border border-gray-700 rounded-xl p-4">
+			<h3 class="text-yellow-400 font-semibold mb-2">🟡 Luz dorada</h3>
+			<pre class="bg-gray-900 rounded-lg p-3 text-xs text-gray-300 overflow-x-auto"><code>ppsvalue=150
+shpdim_s=15
+color=255 215 0
+colorEnd=255 180 0
+vissizestart_s=60 60
+visAlphaEnd=220
+visAlphaStart=20
+visalphafunc_s=ADD
+visname_s=BLUEGLOW.TGA</code></pre>
+		</div>
+		<div class="bg-gray-800/60 border border-gray-700 rounded-xl p-4">
+			<h3 class="text-purple-400 font-semibold mb-2">🟣 Azul-púrpura</h3>
+			<pre class="bg-gray-900 rounded-lg p-3 text-xs text-gray-300 overflow-x-auto"><code>ppsvalue=125
+shpdim_s=12
+color=80 0 255
+colorEnd=180 0 255
+vissizestart_s=50 50
+visAlphaEnd=230
+visAlphaStart=20
+visalphafunc_s=ADD
+visname_s=BLUEGLOW.TGA</code></pre>
+		</div>
+		<div class="bg-gray-800/60 border border-gray-700 rounded-xl p-4">
+			<h3 class="text-green-400 font-semibold mb-2">☠️ Venenoso</h3>
+			<pre class="bg-gray-900 rounded-lg p-3 text-xs text-gray-300 overflow-x-auto"><code>ppsvalue=150
+shpdim_s=15
+color=0 255 50
+colorEnd=0 180 30
+vissizestart_s=55 55
+visAlphaEnd=200
+visAlphaStart=15
+visalphafunc_s=ADD
+visname_s=BLUEGLOW.TGA</code></pre>
+		</div>
+		<div class="bg-gray-800/60 border border-gray-700 rounded-xl p-4">
+			<h3 class="text-blue-300 font-semibold mb-2">✨ Mágico</h3>
+			<pre class="bg-gray-900 rounded-lg p-3 text-xs text-gray-300 overflow-x-auto"><code>ppsvalue=175
+shpdim_s=10
+color=100 150 255
+colorEnd=200 100 255
+vissizestart_s=45 45
+visAlphaEnd=240
+visAlphaStart=25
+visalphafunc_s=ADD
+visname_s=BLUEGLOW.TGA</code></pre>
+		</div>
+		<div class="bg-gray-800/60 border border-gray-700 rounded-xl p-4">
+			<h3 class="text-yellow-200 font-semibold mb-2">🌟 Luz sagrada</h3>
+			<pre class="bg-gray-900 rounded-lg p-3 text-xs text-gray-300 overflow-x-auto"><code>ppsvalue=200
+shpdim_s=20
+color=255 255 200
+colorEnd=255 255 150
+vissizestart_s=70 70
+visAlphaEnd=250
+visAlphaStart=30
+visalphafunc_s=ADD
+visname_s=BLUEGLOW.TGA</code></pre>
+		</div>
+		<div class="bg-gray-800/60 border border-gray-700 rounded-xl p-4">
+			<h3 class="text-gray-400 font-semibold mb-2">⚫ Agujero negro</h3>
+			<pre class="bg-gray-900 rounded-lg p-3 text-xs text-gray-300 overflow-x-auto"><code>ppsvalue=300
+shpdim_s=5
+color=10 0 20
+colorEnd=30 0 50
+vissizestart_s=40 40
+visAlphaEnd=255
+visAlphaStart=50
+visalphafunc_s=BLEND
+visname_s=BLUEGLOW.TGA</code></pre>
+		</div>
+		<div class="bg-gray-800/60 border border-gray-700 rounded-xl p-4">
+			<h3 class="text-gray-500 font-semibold mb-2">👻 Invisible</h3>
+			<pre class="bg-gray-900 rounded-lg p-3 text-xs text-gray-300 overflow-x-auto"><code>ppsvalue=1
+shpdim_s=1
+color=0 0 0
+colorEnd=0 0 0
+vissizestart_s=1 1
+visAlphaEnd=0
+visAlphaStart=0
+visalphafunc_s=ADD
+visname_s=BLUEGLOW.TGA</code></pre>
+		</div>
+	</div>
+
+	<!-- ========== CAMBIOS DE COLORES ========== -->
+	<h2 class="text-2xl font-semibold text-red-300 mt-10 mb-4 border-b border-gray-700 pb-2">Cambios de colores</h2>
+
+	<div class="overflow-x-auto mb-8">
+	<table class="w-full text-sm border-collapse">
+		<thead>
+			<tr class="bg-gray-800">
+				<th class="text-left p-3 text-red-300 font-semibold border-b border-gray-700">Variables</th>
+				<th class="text-left p-3 text-red-300 font-semibold border-b border-gray-700">Por defecto</th>
+				<th class="text-left p-3 text-red-300 font-semibold border-b border-gray-700">Descripción</th>
+			</tr>
+		</thead>
+		<tbody class="text-gray-300">
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="text-red-300 text-xs">dialogSelectedColorR/G/B</code></td><td class="p-3">255, 221, 0</td><td class="p-3">Color de la opción de diálogo seleccionada</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="text-red-300 text-xs">dialogCommonColorR/G/B</code></td><td class="p-3">255, 255, 255</td><td class="p-3">Color de los diálogos regulares</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="text-red-300 text-xs">iColorPoisonR/G/B</code></td><td class="p-3">3, 132, 26</td><td class="p-3">Color del texto de daño por veneno</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="text-red-300 text-xs">expColorR/G/B</code></td><td class="p-3">14, 122, 18</td><td class="p-3">Color del texto de experiencia obtenida</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="text-red-300 text-xs">iColorDayR/G/B</code></td><td class="p-3">245, 247, 225</td><td class="p-3">Color del texto de hora del juego</td></tr>
+		</tbody>
+	</table>
+	</div>
+
+	<!-- ========== ACTIVACIÓN DE MISIONES ========== -->
+	<h2 class="text-2xl font-semibold text-red-300 mt-10 mb-4 border-b border-gray-700 pb-2">Activación de misiones</h2>
+
+	<h3 class="text-lg text-white mt-6 mb-3">Activar el capítulo 7 y los guardianes (nueva partida)</h3>
+	<div class="bg-gray-800/50 border-l-4 border-red-500 p-4 rounded-r-lg mb-4">
+		<p class="text-gray-300"><strong class="text-white">Nombre:</strong> <code class="bg-gray-900 px-1.5 py-0.5 rounded text-red-300 text-sm">bOldGuardiansWay</code></p>
+		<p class="text-gray-300"><strong class="text-white">Valor:</strong> <code class="bg-gray-900 px-1.5 py-0.5 rounded text-red-300 text-sm">831407</code></p>
+	</div>
+
+	<h3 class="text-lg text-white mt-6 mb-3">Activar la misión del mordedor en casa de Xardas (nueva partida)</h3>
+	<div class="bg-gray-800/50 border-l-4 border-red-500 p-4 rounded-r-lg mb-4">
+		<p class="text-gray-300"><strong class="text-white">Nombre:</strong> <code class="bg-gray-900 px-1.5 py-0.5 rounded text-red-300 text-sm">bSnapperQuestStart</code></p>
+		<p class="text-gray-300"><strong class="text-white">Valor:</strong> <code class="bg-gray-900 px-1.5 py-0.5 rounded text-red-300 text-sm">1</code></p>
+	</div>
+
+	<h3 class="text-lg text-white mt-6 mb-3">Activar misiones eliminadas en el parche de la arena (nueva partida)</h3>
+	<div class="bg-gray-800/50 border-l-4 border-red-500 p-4 rounded-r-lg mb-4">
+		<p class="text-gray-300"><strong class="text-white">Nombre:</strong> <code class="bg-gray-900 px-1.5 py-0.5 rounded text-red-300 text-sm">bOldQuestsAvailable</code></p>
+		<p class="text-gray-300"><strong class="text-white">Valor:</strong> <code class="bg-gray-900 px-1.5 py-0.5 rounded text-red-300 text-sm">1788301</code></p>
+	</div>
+
+	<p class="text-gray-300 font-semibold mt-4 mb-2">Lista de misiones:</p>
+	<ul class="list-disc list-inside text-gray-400 space-y-1 mb-8">
+		<li>Error del Lord Andre</li>
+		<li>El cuchillo de Hilda</li>
+		<li>Tipo sin agujero anda sombrío</li>
+		<li>Recuerdos olvidados de Loa</li>
+		<li>Guardia problemático</li>
+		<li>Nigromante en Khorinis</li>
+		<li>Perdón para el traidor</li>
+		<li>Los temores de Pepe</li>
+		<li>Búsqueda del novicio</li>
+		<li>Forma rápida de ganar dinero</li>
+		<li>Crimen y castigo</li>
+		<li>Misión con la marmota</li>
+		<li>Problemas de Parcival</li>
+		<li>Misión con Milten (de Brutus)</li>
+		<li>Sombra en apuros</li>
+		<li>Salvación mágica</li>
+		<li>Almas malditas</li>
+		<li>Orcos sobre la cueva</li>
+		<li>Barco para Sylvio</li>
+		<li>La deuda de Sylvio</li>
+		<li>Venganza de los Antiguos</li>
+	</ul>
+
+	<!-- ========== OTROS ========== -->
+	<h2 class="text-2xl font-semibold text-red-300 mt-10 mb-4 border-b border-gray-700 pb-2">Otros</h2>
+
+	<div class="overflow-x-auto mb-8">
+	<table class="w-full text-sm border-collapse">
+		<thead>
+			<tr class="bg-gray-800">
+				<th class="text-left p-3 text-red-300 font-semibold border-b border-gray-700">Variable</th>
+				<th class="text-left p-3 text-red-300 font-semibold border-b border-gray-700">Por defecto</th>
+				<th class="text-left p-3 text-red-300 font-semibold border-b border-gray-700">Descripción</th>
+			</tr>
+		</thead>
+		<tbody class="text-gray-300">
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="text-red-300 text-xs">iMsgPositionX</code></td><td class="p-3">200–4000</td><td class="p-3">Posición de los mensajes mostrados</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="text-red-300 text-xs">bMinimalHealShow</code></td><td class="p-3">5</td><td class="p-3">Límite para mostrar cantidad de maná/vida regenerada</td></tr>
+			<tr class="border-b border-gray-800 hover:bg-gray-800/50"><td class="p-3"><code class="text-red-300 text-xs">arrowsInfoPosY</code></td><td class="p-3">8</td><td class="p-3">Altura del texto de cantidad de flechas</td></tr>
+		</tbody>
+	</table>
+	</div>
+
+	<div class="bg-gray-800/50 border-l-4 border-red-500 p-4 rounded-r-lg">
+		<p class="text-gray-300">Sigue más información en <a href="https://sefaris.eu/" target="_blank" class="text-red-400 hover:text-red-300">sefaris.eu</a> o únete a <a href="https://discord.gg/9EVFJv5Uyf" target="_blank" class="text-red-400 hover:text-red-300">nuestro servidor de Discord</a>.</p>
+	</div>
+</Layout>

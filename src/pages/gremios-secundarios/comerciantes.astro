@@ -1,0 +1,73 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Guilda de Comerciantes - Gothic II: New Balance">
+	<h1 class="text-3xl font-bold text-red-400 border-b-2 border-red-500/30 pb-3 mb-6">Guilda de Comerciantes</h1>
+
+	<div class="bg-gray-800/60 border-l-4 border-blue-500 p-3 rounded-r-lg text-blue-300 text-sm mb-6">
+		2 formas de unirse: 1) Ayudar a Erol (misión "Comerciantes asaltados") → carta de recomendación. 2) Ayudar a Nigel a recuperar oro (misión "Deuda del comerciante" en arco de asesinos). Entregar la carta a Lutero en la ciudad alta.
+	</div>
+
+	<h2 class="text-2xl font-semibold text-red-300 mt-10 mb-4 border-b border-gray-700 pb-2">Comerciantes asaltados</h2>
+	<div class="bg-gray-800/40 border border-gray-700/50 rounded-xl p-5">
+		<p class="text-gray-400 text-sm mb-1"><strong class="text-gray-300">Encarga:</strong> Erol (junto a Arpía Muerta)</p>
+		<p class="text-gray-300 text-sm">Recuperar 3 tablillas de piedra robadas por bandidos. Las encontramos en cuerpos de bandidos en el puente o repartidas por Khorinis.</p>
+	</div>
+
+	<h2 class="text-2xl font-semibold text-red-300 mt-10 mb-4 border-b border-gray-700 pb-2">Pedido para Bengar / Comercio con el monasterio</h2>
+	<div class="bg-gray-800/40 border border-gray-700/50 rounded-xl p-5">
+		<ul class="list-disc list-inside text-gray-300 text-sm space-y-2">
+			<li><strong>Pedido (Lutero):</strong> Lista → ir a Bengar → llevar envío a Jorza → Lutero.</li>
+			<li><strong>Vino (Lutero):</strong> Nos da 500 oro → comprar vino a Gorax en el monasterio. Negociar hasta ≤50 oro (50 retórica o ser Hechicero). Regatear: bajar 10%, si humor cae subir 5%. Llevar vino a Lutero → <code class="text-red-300 text-xs">+1 retórica</code>.</li>
+		</ul>
+	</div>
+
+	<h2 class="text-2xl font-semibold text-red-300 mt-10 mb-4 border-b border-gray-700 pb-2">Favor para Jorza</h2>
+	<div class="bg-gray-800/40 border border-gray-700/50 rounded-xl p-5">
+		<p class="text-gray-400 text-sm mb-1"><strong class="text-gray-300">Encarga:</strong> Lutero</p>
+		<p class="text-gray-300 text-sm">Zuris se niega a alquilar el local de Jorza. Fingir no saber de la guilda → Zuris habla del conflicto con Lutero → enterarnos del elixir perdido. Ir a Grimes en la mina de Marcos (VM) → llave (con retórica) → cofre del elixir. Devolver a Zuris.</p>
+		<p class="text-gray-300 text-sm mt-2"><strong>Decisión:</strong></p>
+		<ul class="list-disc list-inside text-gray-400 text-sm space-y-1">
+			<li><strong>Admitir alianza con Lutero:</strong> No podemos comprar Llama de Eligor, pero desbloqueamos la misión de Nefarius (receta de resistencia al frío). Gonzales enseña resistencia al fuego. <em>Ahorramos 7000 oro.</em></li>
+			<li><strong>Negar alianza:</strong> Podemos comprar Llama de Eligor por 7000 oro. Resistencia al frío solo con Lee.</li>
+		</ul>
+	</div>
+
+	<h2 class="text-2xl font-semibold text-red-300 mt-10 mb-4 border-b border-gray-700 pb-2">Provisiones para paladines / Acuerdo con Onar</h2>
+	<div class="bg-gray-800/40 border border-gray-700/50 rounded-xl p-5">
+		<ul class="list-disc list-inside text-gray-300 text-sm space-y-2">
+			<li><strong>Provisiones (Lutero):</strong> Averiguar cuánto necesitan los paladines. Hagen → permiso al Fuerte → Lord Varus → informe a Hagen → lista a Lutero.</li>
+			<li><strong>Onar (Lutero):</strong> Negociar acuerdo comercial con Onar. Diálogos: "Un vendedor te ofrece un trato" → "Olvídalo" → "Le basta con querer ganar más" → "¡No es asunto tuyo!" → Onar acepta.</li>
+		</ul>
+	</div>
+
+	<h2 class="text-2xl font-semibold text-red-300 mt-10 mb-4 border-b border-gray-700 pb-2">Antigüedades (Cap. 3)</h2>
+	<div class="bg-gray-800/40 border border-gray-700/50 rounded-xl p-5">
+		<p class="text-gray-300 text-sm">Lutero pide 3 estatuillas de mármol del castillo de Gomez (VM). Encontrar 2 llaves:</p>
+		<ul class="list-disc list-inside text-gray-400 text-sm space-y-1 mt-1">
+			<li>1ª llave: Edificio principal de Garond, mesa en un cuarto del piso superior.</li>
+			<li>2ª llave: Habitación de Engor, estantería en la pared.</li>
+		</ul>
+		<p class="text-gray-300 text-sm mt-2">Abrir puerta de la torre → Zombie Gomez → matarlo → fantasma de Gomez → pide que levantemos su maldición. Completar "Maldición de Gomez" → llave → abrir cofre → estatuillas → Lutero.</p>
+	</div>
+
+	<h2 class="text-2xl font-semibold text-red-300 mt-10 mb-4 border-b border-gray-700 pb-2">Maldición de Gomez (Cap. 3)</h2>
+	<div class="bg-gray-800/40 border border-gray-700/50 rounded-xl p-5">
+		<ol class="list-decimal list-inside text-gray-300 text-sm space-y-2">
+			<li>Obtener perdón de 3 dioses: Innos y Beliar en capillas (requiere alto karma o logros), Adanos vía Vatras en la ciudad.</li>
+			<li>Ir a la Vieja Mina → obtener perdón de 10 almas de mineros (hablar con zombis fantasmas y matarlos).</li>
+			<li>Volver al castillo → edificio de los magos de G1 → pentagramo del piso superior → invocar magos de fuego muertos → pedir perdón de Corristo → limpiar la Cueva de Dolor (junto a vieja torre de Xardas, cruzar puente) → Corristo perdona → Gomez → llave.</li>
+		</ol>
+	</div>
+
+	<h2 class="text-2xl font-semibold text-red-300 mt-10 mb-4 border-b border-gray-700 pb-2">Brandy negro / Asistente / Sara (Cap. 3)</h2>
+	<div class="bg-gray-800/40 border border-gray-700/50 rounded-xl p-5">
+		<ul class="list-disc list-inside text-gray-300 text-sm space-y-2">
+			<li><strong>Brandy (Lutero):</strong> Mensajero desaparecido con 5 botellas. Ir a Arpía Muerta → cruce → Benchel rodeado de bandidos → matar bandidos → escoltar a la ciudad → Benchel se niega a seguir trabajando para Lutero → nos da el brandy.</li>
+			<li><strong>Asistente (Lutero):</strong> Nuevo ayudante: Valeran (banco ciudad alta, mejor opción +1% arma), Gayvern (taberna de Kardif) o Maxi (junto a Vatras). No elegir Gayvern si lo queremos como guardia de nuestro campamento.</li>
+			<li><strong>Sara:</strong> Solo si la metimos presa con Canthar en cap. 1. Andre → Sara (banco junto a taberna de Coragon). 3 tareas: 1) 2 carne + 2 leche. 2) Anillo familiar (robar/pegar/convencer a Boltan). 3) Pagar deuda de 2000 oro a Harad.</li>
+		</ul>
+		<p class="text-gray-400 text-xs mt-2">Al completar todas las misiones obtenemos el <strong>Anillo de Maestro de Guilda de Comerciantes</strong>. Los miembros (Salandril, Sara, Lutero, Jorza, Erol, Matteo, Nigel) venden objetos adicionales. No hace falta llevar puesto el anillo.</p>
+	</div>
+</Layout>

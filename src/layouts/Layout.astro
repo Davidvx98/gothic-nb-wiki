@@ -1,0 +1,110 @@
+---
+import '../styles/global.css';
+interface Props {
+	title?: string;
+}
+const { title = "Gothic II: New Balance - Wiki en Español" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es" class="bg-gray-950 text-gray-100">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="flex flex-col lg:flex-row min-h-screen font-sans">
+		<!-- Mobile header -->
+		<button id="menu-toggle" class="lg:hidden fixed top-4 left-4 z-50 bg-gray-800 p-2 rounded-lg border border-gray-700 text-red-400">
+			<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+		</button>
+
+		<!-- Sidebar -->
+		<nav id="sidebar" class="hidden lg:block fixed top-0 left-0 w-72 h-screen overflow-y-auto bg-gray-900 border-r border-gray-800 p-5 z-40">
+			<div class="mb-6">
+				<a href="/" class="text-lg font-bold text-red-400 hover:text-red-300 no-underline">⚔️ Gothic II: NB</a>
+				<p class="text-xs text-gray-500 mt-1">Wiki en Español</p>
+			</div>
+
+			<div class="space-y-4 text-sm">
+				<div>
+					<a href="/" class="block py-1.5 px-3 rounded text-gray-300 hover:bg-gray-800 hover:text-red-400 no-underline">🏠 Inicio</a>
+				</div>
+
+				<div>
+					<p class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 px-3">Configuración</p>
+					<a href="/configuracion/gothic-ini" class="block py-1.5 px-3 rounded text-gray-400 hover:bg-gray-800 hover:text-red-400 no-underline">Gothic.ini</a>
+				</div>
+
+				<div>
+					<p class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 px-3">Misiones</p>
+					<a href="/misiones/capitulo-1" class="block py-1.5 px-3 rounded text-gray-400 hover:bg-gray-800 hover:text-red-400 no-underline">Capítulo I</a>
+					<a href="/misiones/capitulo-2" class="block py-1.5 px-3 rounded text-gray-400 hover:bg-gray-800 hover:text-red-400 no-underline">Capítulo II</a>
+					<a href="/misiones/capitulo-3" class="block py-1.5 px-3 rounded text-gray-400 hover:bg-gray-800 hover:text-red-400 no-underline">Capítulo III</a>
+					<a href="/misiones/capitulo-4" class="block py-1.5 px-3 rounded text-gray-400 hover:bg-gray-800 hover:text-red-400 no-underline">Capítulo IV</a>
+					<a href="/misiones/capitulo-5" class="block py-1.5 px-3 rounded text-gray-400 hover:bg-gray-800 hover:text-red-400 no-underline">Capítulo V</a>
+					<a href="/misiones/secundarias" class="block py-1.5 px-3 rounded text-gray-400 hover:bg-gray-800 hover:text-red-400 no-underline">Secundarias</a>
+				</div>
+
+				<div>
+					<p class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 px-3">Gremios principales</p>
+					<a href="/gremios/cazador-demonios" class="block py-1.5 px-3 rounded text-gray-400 hover:bg-gray-800 hover:text-red-400 no-underline">Cazador de Demonios</a>
+					<a href="/gremios/cazador-dragones" class="block py-1.5 px-3 rounded text-gray-400 hover:bg-gray-800 hover:text-red-400 no-underline">Mercenario / Cazador de Dragones</a>
+					<a href="/gremios/mago-fuego" class="block py-1.5 px-3 rounded text-gray-400 hover:bg-gray-800 hover:text-red-400 no-underline">Mago de Fuego</a>
+					<a href="/gremios/mago-agua" class="block py-1.5 px-3 rounded text-gray-400 hover:bg-gray-800 hover:text-red-400 no-underline">Mago de Agua</a>
+					<a href="/gremios/caballero-oscuro" class="block py-1.5 px-3 rounded text-gray-400 hover:bg-gray-800 hover:text-red-400 no-underline">Caballero Oscuro</a>
+					<a href="/gremios/nigromante" class="block py-1.5 px-3 rounded text-gray-400 hover:bg-gray-800 hover:text-red-400 no-underline">Nigromante / Invocador</a>
+					<a href="/gremios/condenado" class="block py-1.5 px-3 rounded text-gray-400 hover:bg-gray-800 hover:text-red-400 no-underline">Condenado</a>
+					<a href="/gremios/guardia-paladin" class="block py-1.5 px-3 rounded text-gray-400 hover:bg-gray-800 hover:text-red-400 no-underline">Guardia / Paladín</a>
+					<a href="/gremios/guardian-guru" class="block py-1.5 px-3 rounded text-gray-400 hover:bg-gray-800 hover:text-red-400 no-underline">Guardián del Templo / Gurú</a>
+					<a href="/gremios/explorador" class="block py-1.5 px-3 rounded text-gray-400 hover:bg-gray-800 hover:text-red-400 no-underline">Explorador</a>
+				</div>
+
+				<div>
+					<p class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 px-3">Gremios secundarios</p>
+					<a href="/gremios-secundarios/info" class="block py-1.5 px-3 rounded text-gray-400 hover:bg-gray-800 hover:text-red-400 no-underline">Información adicional</a>
+					<a href="/gremios-secundarios/comerciantes" class="block py-1.5 px-3 rounded text-gray-400 hover:bg-gray-800 hover:text-red-400 no-underline">Gremio de Comerciantes</a>
+					<a href="/gremios-secundarios/cazadores" class="block py-1.5 px-3 rounded text-gray-400 hover:bg-gray-800 hover:text-red-400 no-underline">Gremio de Cazadores</a>
+					<a href="/gremios-secundarios/asesinos" class="block py-1.5 px-3 rounded text-gray-400 hover:bg-gray-800 hover:text-red-400 no-underline">Gremio de Asesinos</a>
+					<a href="/gremios-secundarios/ladrones" class="block py-1.5 px-3 rounded text-gray-400 hover:bg-gray-800 hover:text-red-400 no-underline">Gremio de Ladrones</a>
+				</div>
+
+				<div>
+					<p class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 px-3">Tramas secundarias</p>
+					<a href="/tramas/asesinos-masjaf" class="block py-1.5 px-3 rounded text-gray-400 hover:bg-gray-800 hover:text-red-400 no-underline">Asesinos (Masjaf)</a>
+					<a href="/tramas/granja-oswald" class="block py-1.5 px-3 rounded text-gray-400 hover:bg-gray-800 hover:text-red-400 no-underline">Granja de Oswald</a>
+					<a href="/tramas/fuerte-azgan" class="block py-1.5 px-3 rounded text-gray-400 hover:bg-gray-800 hover:text-red-400 no-underline">Fuerte Azgan</a>
+					<a href="/tramas/pesadilla-cuervo" class="block py-1.5 px-3 rounded text-gray-400 hover:bg-gray-800 hover:text-red-400 no-underline">Pesadilla del Cuervo</a>
+					<a href="/tramas/orcos" class="block py-1.5 px-3 rounded text-gray-400 hover:bg-gray-800 hover:text-red-400 no-underline">Orcos</a>
+					<a href="/tramas/desierto-adanos" class="block py-1.5 px-3 rounded text-gray-400 hover:bg-gray-800 hover:text-red-400 no-underline">Desierto de Adanos</a>
+					<a href="/tramas/montanas-orcos" class="block py-1.5 px-3 rounded text-gray-400 hover:bg-gray-800 hover:text-red-400 no-underline">Montañas Nevadas de los Orcos</a>
+					<a href="/tramas/costa-occidental" class="block py-1.5 px-3 rounded text-gray-400 hover:bg-gray-800 hover:text-red-400 no-underline">Costa Occidental</a>
+					<a href="/tramas/hermano-perdido" class="block py-1.5 px-3 rounded text-gray-400 hover:bg-gray-800 hover:text-red-400 no-underline">Hermano Perdido</a>
+				</div>
+
+				<div class="border-t border-gray-800 pt-4 mt-4">
+					<p class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 px-3">Enlaces</p>
+					<a href="https://sefaris.eu/new-balance/installation" target="_blank" class="block py-1.5 px-3 rounded text-gray-400 hover:bg-gray-800 hover:text-red-400 no-underline">Instalación ↗</a>
+					<a href="https://sefaris.eu/" target="_blank" class="block py-1.5 px-3 rounded text-gray-400 hover:bg-gray-800 hover:text-red-400 no-underline">Sefaris ↗</a>
+					<a href="https://discord.gg/9EVFJv5Uyf" target="_blank" class="block py-1.5 px-3 rounded text-gray-400 hover:bg-gray-800 hover:text-red-400 no-underline">Discord ↗</a>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Main content -->
+		<main class="flex-1 lg:ml-72 p-4 sm:p-8 max-w-5xl">
+			<slot />
+		</main>
+
+		<script is:inline>
+			const toggle = document.getElementById('menu-toggle');
+			const sidebar = document.getElementById('sidebar');
+			toggle.addEventListener('click', () => {
+				sidebar.classList.toggle('hidden');
+				sidebar.classList.toggle('block');
+			});
+		</script>
+	</body>
+</html>
