@@ -1,46 +1,37 @@
-# Astro Starter Kit: Basics
+# Gothic II: New Balance · Wiki en español
 
-```sh
-pnpm create astro@latest -- --template basics
+Wiki estática en español del mod **Gothic II: New Balance**, traducida y reorganizada a partir de la documentación original en polaco.
+
+## Contenido
+
+- **Gremios** principales (Mago de Fuego, Mago de Agua, Nigromante, Paladín, Cazador de Dragones…) y **gremios secundarios** (asesinos, cazadores, comerciantes, ladrones).
+- **Misiones** por capítulos (1 a 5) y misiones secundarias.
+- **Tramas** y zonas nuevas del mod.
+- **Configuración** del juego (`Gothic.ini`).
+
+## Stack
+
+Astro 6 · Tailwind CSS 4. Sitio 100 % estático: cada página es un fichero `.astro` en `src/pages/`, así que añadir contenido es crear una página.
+
+## Desarrollo
+
+```bash
+pnpm install
+pnpm dev       # http://localhost:4321
+pnpm build     # genera ./dist
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+## Estructura
 
 ```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+src/pages/
+├── gremios/              # un fichero por gremio
+├── gremios-secundarios/
+├── misiones/             # capitulo-1 … capitulo-5, secundarias
+├── tramas/
+└── configuracion/
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+---
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Proyecto de fans sin ánimo de lucro. *Gothic* es una marca de sus respectivos propietarios.
